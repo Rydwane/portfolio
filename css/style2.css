@@ -1,0 +1,27 @@
+#competence{
+    background-color:black;
+    padding-top: 8%;
+    padding-bottom: 9%;
+}
+
+.parc{
+    color: beige;
+}
+
+#compétence{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#compétence.visible{
+    opacity: 1;
+}
+
+.comp{
+    display: inline-block;
+    width: auto;
+    background-color: rgb(95, 84, 105);
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}

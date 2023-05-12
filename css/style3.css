@@ -1,0 +1,61 @@
+#block1{
+    overflow: hidden;
+    background-color: rgb(12, 13, 37);
+}
+center{
+    color: azure;
+}
+#langues{
+    background-color: rgb(241, 241, 156);
+    width: 50%;
+    float: left;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#langues.visible{
+    opacity: 1;
+}
+
+#langues ul li{
+    font-size: 25px;
+}
+
+#etre{
+    background-color: rgb(245, 193, 115);
+    width: 50%;
+    height: auto;
+    float: right;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 1s;
+}
+#etre.visible{
+    opacity: 1;
+}
+
+#etre ul li{
+    font-size: 25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #langues{
+        background-color: rgb(241, 241, 156);
+        width: 100%;
+        /* float: left; */
+        height: auto;
+        border-radius: 15px;
+        
+    }
+
+    #etre{
+        background-color: rgb(245, 193, 115);
+        width: 100%;
+        height: auto;
+        /* float: right; */
+        border-radius: 15px;
+       
+    }
+}

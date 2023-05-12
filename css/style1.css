@@ -1,0 +1,185 @@
+ #tout {
+    background-color: rgb(12, 13, 37);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ }
+
+.ip{
+    overflow: hidden;
+    margin: 10px;
+
+    
+}
+
+.parc{
+    color: aliceblue;
+}
+
+
+
+.date1{
+    width: auto;
+    margin-left: 15%;
+    background: linear-gradient( darkgreen, rgb(6, 45, 153));
+
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+.date1.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.date2{
+    width: auto;
+    margin-left: 15%;
+    background:   linear-gradient( darkgreen, rgb(6, 45, 153));
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+    transition-delay: 2s;
+}
+.date2.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.date3{
+    width: auto;
+    margin-left: 15%;
+    background:  linear-gradient( darkgreen, rgb(6, 45, 153));
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+    transition-delay: 4s;
+}
+.date3.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+.diplome1{
+    background-color: white;
+    width: 55%;
+    height: 75px;
+    margin-right: 20%;
+    float: right;
+    border-radius: 7px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+    transition-delay: 1s;
+}
+.diplome1.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.diplome2{
+    background-color: white;
+    width: 55%;
+    height: 75px;
+    margin-right: 20%;
+    float: right;
+    border-radius: 7px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+    transition-delay: 3s;
+}
+.diplome2.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.diplome3{
+    background-color: white;
+    width: 55%;
+    height: 75px;
+    margin-right: 20%;
+    float: right;
+    border-radius: 7px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease, transform 1s ease;
+    transition-delay: 5s;
+}
+.diplome3.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 767px){
+    .diplome1{font-size: 100;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #tout{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #tout{
+        height: 90%;
+        width: 100%;
+    }
+
+    .ip{
+        height: auto;
+    }
+
+    .date1{
+        margin-left: 15%;
+        font-size: 25px;
+    }
+
+    .date2{
+        margin-left: 15%;
+        font-size: 25px;
+    }
+
+    .date3{
+        margin-left: 15%;
+        font-size: 25px;
+    }
+
+    .diplome1{
+        width: 60%;
+        margin-right: 10%;
+        font-size: 250%;
+        height: 100%;
+    }
+
+    .diplome2{
+        width: 60%;
+        margin-right: 10%;
+        font-size: 250%;
+        height: 100%;
+    }
+
+    .diplome3{
+        width: 60%;
+        margin-right: 10%;
+        font-size: 250%;
+        height: 100%;
+    }
+}

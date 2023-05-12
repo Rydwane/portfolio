@@ -1,0 +1,395 @@
+ #prem{
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../images/font.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+
+    
+
+
+
+
+/* styles pour mobile portrait */
+@media screen and (max-width: 480px) {
+    #nom{
+        display: block;
+        width: 90%;
+        height: 50px;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../images/pho.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #present{
+        width: 100%;
+        color: beige;
+        font-size: 20px;
+        font-family: cursive;
+        display: block;
+    }
+
+    .com {
+        font-size: 115%;
+    }
+
+    #prem ul{
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;
+        opacity: 50%;
+    }
+
+    .lien{
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;
+        opacity: 50%;
+    }
+
+    .lien li{
+    
+        margin-right: 3%;
+        margin-top: 0%;
+        font-size: 20px;
+    
+    }
+
+    .lien li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: arial;
+        font-weight: bold;
+    }
+
+    #block{
+        overflow: hidden;
+    }
+    
+    #bas{
+        opacity: 1;
+        
+    }
+     
+  }
+  
+  
+  
+  /* styles pour tablettes */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #nom{
+        width: 70%;
+        height: 800px;
+        margin-left: 15%;
+        margin-top: 50px;
+        margin-bottom: 2.5%;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../images/pho.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 60px; 
+    }
+    
+    #present{
+        width: 90%;
+        margin-top: 100px;
+        margin-left: 30px;
+        height: auto;
+        color: beige;
+        font-size: 40px;
+        font-family: cursive;
+    }
+    
+    .lien {
+        size: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay:1.5s;
+    }
+    .lien.visible{
+        opacity: 50%;
+        padding-right: 0%;
+    }
+    
+    .lien li{
+        
+        margin-right: 5%;
+        margin-top: 0%;
+        font-size: 35px;
+    
+    }
+    
+    .lien li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: arial;
+        font-weight: bold;
+    }
+    
+  }
+
+  
+  
+  
+  /* styles pour écrans d'ordinateur portable */
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    #prem{
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #tete{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #nom{
+        display: block;
+        overflow: hidden;
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        opacity: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../images/pho.jpg);
+        background-position: center;
+        background-size: cover;
+        float: left;
+        border-radius: 60px;
+        transform: translateX(-50%);
+        transition: opacity 0.5s ease, transform 1s ease;
+       
+    }
+    #nom.visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    h3 {
+        justify-content: center;
+        font-style: italic;
+    }
+    
+    #present{
+        width: 55%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+        height: auto;
+        opacity: 0;
+        float: right;
+        color: beige;
+        font-size: 25px;
+        font-family: cursive;
+        transform: translateX(50%);
+        transition: opacity 2s ease, transform 2s ease;
+        transition-delay: 0.5s;
+    }
+    #present.visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .com {
+        width: 85%;
+        margin-left: 10%;
+        
+    }
+    
+   .lien{
+        size: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay:1.5s;
+    }
+    .lien.visible{
+        opacity: 50%;
+        padding-right: 0%;
+    }
+    
+    .lien li{
+        
+        margin-right: 5%;
+        margin-top: 0%;
+        font-size: 20px;
+    
+    }
+    
+    .lien li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+    
+    
+    #block{
+        overflow: hidden;
+    }
+    
+    #bas{
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay: 2s;
+        
+    }
+    
+    #bas.visible{
+        opacity: 1;
+        color: black;
+    }
+  }
+  
+  /* styles pour écrans d'ordinateur de bureau */
+  @media screen and (min-width: 1367px) {
+    #prem{
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #tete{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #nom{
+        display: block;
+        overflow: hidden;
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        opacity: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../images/pho.jpg);
+        background-position: center;
+        background-size: cover;
+        float: left;
+        border-radius: 60px;
+        transform: translateX(-50%);
+        transition: opacity 0.5s ease, transform 1s ease;
+       
+    }
+    #nom.visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    h3 {
+        justify-content: center;
+        font-style: italic;
+    }
+    
+    #present{
+        width: 55%;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+        height: auto;
+        opacity: 0;
+        float: right;
+        color: beige;
+        font-size: 30px;
+        font-family: cursive;
+        transform: translateX(50%);
+        transition: opacity 2s ease, transform 2s ease;
+        transition-delay: 0.5s;
+    }
+    #present.visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .com {
+        width: 85%;
+        margin-left: 10%;
+        
+    }
+    
+    .lien ul{
+        size: 100%;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay:1.5s;
+    }
+    .lien.visible{
+        opacity: 50%;
+        padding-right: 0%;
+    }
+    
+   .lien li{
+        
+        margin-right: 5%;
+        margin-top: 0%;
+        font-size: 20px;
+    
+    }
+    
+    .lien li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+    
+    
+    #block{
+        overflow: hidden;
+    }
+    
+    #bas{
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        transition-delay: 2s;
+        color: black;
+    }
+    
+    #bas.visible{
+        opacity: 1;
+        color: black;
+    }
+  }
+  

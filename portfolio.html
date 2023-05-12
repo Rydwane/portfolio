@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/style3.css">
+        <title>Portfolio</title>
+        <script>
+            setTimeout(function(){
+                var blocs = document.querySelectorAll('#nom');
+                for (var i = 0; i < blocs.length; i++){
+                    blocs[i].classList.add('visible');
+                }
+            },1000);
+            setTimeout(function(){
+                var blocs = document.querySelectorAll('#present');
+                for (var i = 0; i < blocs.length; i++){
+                    blocs[i].classList.add('visible');
+                }
+            },1000);
+            setTimeout(function(){
+                var blocs = document.querySelectorAll('ul');
+                for (var i = 0; i < blocs.length; i++){
+                    blocs[i].classList.add('visible');
+                }
+            },1000);
+            setTimeout(function(){
+                var blocs = document.querySelectorAll('#bas');
+                for (var i = 0; i < blocs.length; i++){
+                    blocs[i].classList.add('visible');
+                }
+            },1000);
+        </script> 
+        <script src="js/parcours.js"></script>
+        <script src="js/competence.js"></script>
+        <script src="js/autre.js"></script>
+    </head>
+    <body>
+        <div id="prem">
+        <div id="tete">
+        <div id="nom"> </div>
+        
+        <div id="present">
+            <div class="com">
+                <div>
+                    <center><h3>PRESENTATION</h3></center>
+                </div>
+               
+                <div>
+                    <p>
+                        Je suis BACHABI Rydwane, né au Bénin le 21 avril 2002 à Bohicon, développeur passionné dans le domaine du web depuis 3 ans, actuellement développeur web.
+                        Je vis au Bénin, dans la ville de Calavi.
+                        Je conçois et je réalises des sites web du cahier de charge à la mise en ligne. 
+                        Je fais aussi du développement en python.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+            <ul class="lien">
+                <li> <a href="#tout">Mon parcours</a> </li>
+                <li> <a href="#competence">Compétences</a> </li>
+                <li> <a href="#block1">Autres</a> </li>
+            </ul>
+            <a class="bout" href="cv.pdf" download>Télécharger le CV</a>
+
+              
+        </div>
+        </div>
+        
+        </div>
+
+        <div id="tout">
+            <div class="parc">
+                <center><h1><u>MON PARCOURS</u></h1></center>
+            </div>
+        </br></br>
+            <div class="ip">
+                <div class="date1">
+                    <h4>2022 à 2023</h4>
+                </div>
+                <div class="diplome1">
+                    Licence en Système d'information et réseau informatique à l'Institut de Formation et de la Recherche en Informatique à l'Université d'Abomey Calavi au Bénin.
+                </div>
+            </div>
+        </br></br></br>
+            <div class="ip">
+                <div class="date2">
+                    <h4>2019 à 2022</h4>
+                </div>
+                <div class="diplome2">
+                    Licence en  Mathématique, Informatique et application à la Faculté des Sciences et Technique de l'Université d'Abomey Calavi au Bénin.
+                </div>
+            </div>
+        </br></br></br>
+            <div class="ip">
+                <div class="date3">
+                    <h4>2018 à 2019</h4>
+                </div>
+                <div class="diplome3">
+                    Baccalauréat Scientifique série C au college privé "Les Palmiers" de Porto-Novo au Bénin
+                </div>
+            </div>
+            <ul class="lien">
+                <li> <a href="#prem">Acceuil</a> </li>
+                <li> <a href="#competence">Compétences</a> </li>
+                
+                <li> <a href="#block1">Autres</a> </li>
+            </ul>
+        </div>
+
+        <div id="competence">
+            <center>
+            
+                <div class="parc">
+                    <h1><u>COMPETENCES TECHNIQUES</u></h1>
+                </div>
+            </br></br></br>
+    
+            <div id="compétence">
+                <div class="class">
+                <div class="comp">
+                    HTML
+                </div>
+                <div class="comp">
+                    CSS
+                </div>
+                <div class="comp">
+                    JavaScript
+                </div>
+                <div class="comp">
+                    MySQL
+                </div>
+                <div class="comp">
+                    Wordpress
+                </div>
+                </div>
+            </br></br></br>
+    
+                <div class="class">
+                <div class="comp">
+                    C
+                </div>
+                <div class="comp">
+                    C++
+                </div>
+                <div class="comp">
+                    Python
+                </div>
+                <div class="comp">
+                    R
+                </div>
+                </div>
+            </br></br></br>
+    
+                <div class="class">
+                
+                <div class="comp">
+                    Word
+                </div>
+                <div class="comp">
+                    Excel
+                </div>
+                <div class="comp">
+                    Power Point
+                </div>
+                <div class="comp">
+                    Algorithmique
+                </div>
+                </div>
+            </div>
+        </center>
+        <ul class="lien">
+            <li> <a href="#tout">Mon parcours</a> </li>
+            <li> <a href="#prem">Acceuil</a> </li>
+           
+            <li> <a href="#block1">Autres</a> </li>
+        </ul>
+    </div>
+
+    <div id="block1">
+        <center><u><h1>AUTRES</h1></u></center>
+        <div id="langues">
+            <div >
+                 <h2><u>LANGUES</u></h2>
+            </div>
+            <div id="lang">
+                <ul>
+                    <li>Haussa</li>
+                    <li>Français</li>
+                    <li>Fon</li>
+                    <li>Anglais</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div id="etre">
+            <div>
+                <h2><u>SAVOIR-ETRE</u></h2>
+            </div>
+            
+            <div id="et">
+                <ul>
+                    <li>Rigoureux</li>
+                    <li>Autonome</li>
+                    <li>Adaptable</li>
+                    <li>Organisé</li>
+                </ul>
+            </div>
+        </div>
+        <ul class="lien">
+            <li> <a href="#tout">Mon parcours</a> </li>
+            <li> <a href="#competence">Compétences</a> </li>
+           
+            <li> <a href="#prem">Acceuil</a> </li>
+        </ul>
+    </div>
+
+    <div id="bas">
+        <center>GET IN TOUCH</center>
+        <p id="p2" CLASS="par">
+         
+            <center>
+                <a href="mailto:rydwanebachabi10@gmail.com"><img src="images/gmail.svg"/></a>
+                <img src="images/phone.svg" title="66664010"/>
+            </center>  
+        </p>
+    </div>
+    </body>
+</html>
